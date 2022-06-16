@@ -33,7 +33,7 @@ AntiBotSystem| Minecraft Bedrock Edition | Nukkit API 1.0.14
 
 ---
 
-> * Link to cloudburstmc article -> [CloudburstMC](https://cloudburstmc.org/resources/newnotification.808/)
+> * Link to cloudburstmc article -> [CloudburstMC](https://cloudburstmc.org/resources/antibotsystem.809/)
 
 ---
 
