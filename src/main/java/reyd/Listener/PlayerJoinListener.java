@@ -61,6 +61,7 @@ public class PlayerJoinListener implements Listener {
 
                     }
                 } else if (count > 0){
+
                     count--;
                     event.getPlayer().kick(AntiBotMain.getAntiBotCFG().TimeOver());
                     SaveCaptcha.remove(event.getPlayer());
@@ -69,16 +70,7 @@ public class PlayerJoinListener implements Listener {
 
                 else {
 
-                    if (SaveCaptcha.get(event.getPlayer()) != null){
-
-//                        event.getPlayer().sendTitle(AntiBotMain.getAntiBotCFG().TimeOver());
-//                        event.getPlayer().kick(AntiBotMain.getAntiBotCFG().TimeOver());
-
-
-                    }
-
                     taskHandler.cancel();
-
 
                 }
 
@@ -97,7 +89,7 @@ public class PlayerJoinListener implements Listener {
     }
 
     @EventHandler
-    public void on(PlayerChatEvent event){
+    public void determineCaptcha(PlayerChatEvent event){
         if (SaveCaptcha.get(event.getPlayer()) != null){
             if (event.getMessage().equals(SaveCaptcha.get(event.getPlayer()))){
 
